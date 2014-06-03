@@ -3,7 +3,7 @@ layout: post
 
 title: Hello Jekyll
 subtitle: "How I created this blog"
-cover_image: blog-cover.jpg
+cover_image: tools.jpg
 
 excerpt: "From zero to blog in 30min flat"
 
@@ -16,22 +16,34 @@ author:
 ---
 
 >"Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites."
-jekyll was created by Tom Preston-Werner the co-founder of github. It works seamlessly with github pages making it quick and easy to start a blog or static website in minuts.
+[jekyll](https://github.com/jekyll/jekyll) was created by Tom Preston-Werner the co-founder of github. It works seamlessly with [github pages](https://pages.github.com/) making it quick and easy to start a blog or static website in minutes.
 
-https://github.com/jekyll/jekyll
-https://pages.github.com/
-
-incorporated is a jekyll app that has a very clean style and is a greate base for creating your own blog. just update your config.yml and started blogging. it took me longer to write this artical then it took me to set up this blog.
+[incorporated](https://github.com/kippt/jekyll-incorporated) is a jekyll app that has a very clean style and is a greate base for creating your own jekyll blog.
 
 {% highlight yaml %}
-~ $ https://github.com/kippt/jekyll-incorporated
+Terminal:
+~ $ git clone https://github.com/kippt/jekyll-incorporated
 ~ $ cd jekyll-incorporated
-~ $ git add --all
-~ $ git commit -m "Initial commit"
-~ $ git push
-~ $ open http://username.github.io
+~ $ bundle install
+~ $ jekyll serve --watch
+~ $ open http://localhost:4000/
 {% endhighlight %}
 
-It will take a few minuts befor you can open your new blog.
+Then make the blog your own by editing the  file and hacking around with the css to sute your prefrinces.
 
-read the premade incorporated post about how to make your first post and you are ready to go.
+publishing your blog is as easy as creating a git repo  and adding the repo name to the Rakefile 
+
+{% highlight yaml %} 
+Rakefile:
+# Change your GitHub reponame eg. "kippt/jekyll-incorporated"
+GITHUB_REPONAME = "sethclarkdowden/Blog"
+{% endhighlight %}
+
+Then run
+
+{% highlight yaml %}
+Terminal:
+~ $ rake site:publish
+{% endhighlight %}
+
+in a few minuts you will have your very own blog 
