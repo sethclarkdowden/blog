@@ -10,7 +10,7 @@ excerpt: "From zero to blog in 30min flat"
 author:
   name: Seth Dowden
   twitter: Sethdowden
-  gplus: 100687498195339762535 
+  gplus: xxx
   bio: the simple sage
   image: ks.png
 ---
