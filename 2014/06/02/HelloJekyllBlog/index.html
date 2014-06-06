@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Jekyll &mdash; Seth Dowden</title>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/blog/assets/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/logo.png"/>
+    <link href="/feed.xml" rel="alternate" type="application/rss+xml" title="Seth Dowden" />
+    <meta name="title" content="Hello Jekyll ">
+    <link rel="canonical" href="http://incorporated.sendtoinc.com/2014/06/02/HelloJekyllBlog/">
+     
+    <link rel="author" href="https://plus.google.com/107331210556812716038">       
+    <meta property="og:title" content="Hello Jekyll "/>
+    <meta property="og:url" content="http://incorporated.sendtoinc.com/2014/06/02/HelloJekyllBlog/"/>
+    
+    <meta property="og:image" content="http://incorporated.sendtoinc.com/images/tools.jpg"/>
+    
+    <meta property="og:image" content="http://incorporated.sendtoinc.com/images/logo.png"/>   
+    
+    
+    <meta property="og:description" content="From zero to blog in 30 minutes flat."/>
+    <meta name="description" content="From zero to blog in 30 minutes flat."/>
+    
+    <meta property="og:site_name" content="Seth Dowden">     
+</head>
+<body>
+    
+<section class="site-nav">
+    <header>
+        <nav id="navigation">
+            <a class="brand" href="/blog/">
+                <img src="/blog/images/logo.png" alt="Inc">
+            </a>
+            <a href="/blog/" class="home">Blog</a>
+            <a href="/blog/about">About</a>
+        </nav>
+    </header>
+</section>
+
+
+<div class="article-cover">
+    <div>
+        <img src="/blog/images/tools.jpg" class="image">
+    </div>
+</div>
+
+<article>
+
+    <div class="container">
+        <header>
+            <div class="meta">
+                By <address><a rel="author" href="" title="Seth Dowden" target="_blank">Seth Dowden</a></address> &mdash;
+                <time pubdate datetime="2014-02-June" title="June 02, 2014">June 02, 2014</time>
+            </div>
+            <h1 class="title">Hello Jekyll</h1>
+            <h2 class="subtitle">How I created this blog</h2>
+        </header>
+
+        <section>
+            <blockquote>
+<p>“Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites.”</p>
+</blockquote>
+
+<p><a href="https://github.com/jekyll/jekyll">jekyll</a> was created by Tom Preston-Werner the co-founder of github. It works seamlessly with <a href="https://pages.github.com/">github pages</a> making it quick and easy to start a blog or static website in minutes.</p>
+
+<p><a href="https://github.com/kippt/jekyll-incorporated">incorporated</a> is a jekyll app that has a very clean style and is a greate base for creating your own jekyll blog.</p>
+<div class='highlight'><pre><code class='yaml'><span class='l-Scalar-Plain'>Terminal</span><span class='p-Indicator'>:</span>
+<span class='l-Scalar-Plain'>~ $ git clone https://github.com/kippt/jekyll-incorporated</span>
+<span class='l-Scalar-Plain'>~ $ cd jekyll-incorporated</span>
+<span class='l-Scalar-Plain'>~ $ bundle install</span>
+<span class='l-Scalar-Plain'>~ $ jekyll serve --watch</span>
+<span class='l-Scalar-Plain'>~ $ open http://localhost:4000/</span>
+</code></pre></div>
+<p>Then make the blog your own by editing the config.yml file and hacking around with the css to suit your preferences.</p>
+
+<p>publishing your blog is as easy as creating a git repo and adding the repo name to the Rakefile</p>
+<div class='highlight'><pre><code class='yaml'> 
+<span class='l-Scalar-Plain'>Rakefile</span><span class='p-Indicator'>:</span>
+<span class='c1'># Change your GitHub repo name eg. &quot;kippt/jekyll-incorporated&quot;</span>
+<span class='l-Scalar-Plain'>GITHUB_REPONAME = &quot;sethclarkdowden/Blog&quot;</span>
+</code></pre></div>
+<p>Then run</p>
+<div class='highlight'><pre><code class='yaml'><span class='l-Scalar-Plain'>Terminal</span><span class='p-Indicator'>:</span>
+<span class='l-Scalar-Plain'>~ $ rake site:publish</span>
+</code></pre></div>
+<p>in a few minutes you will have your very own blog</p>
+            
+        </section>
+
+
+        <footer>
+            <address>
+               <img src="/blog/images/ks.png">
+                <p>Written by <strong><a rel="author" href="https://twitter.com/Sethdowden" title="" target="_blank">Seth Dowden</a></strong><br>
+                <span class="muted">the simple sage</span>
+                </p>
+            </address>
+
+        </footer>
+
+        
+    </div>
+</article>
+
+
+<footer class="site-footer">
+    <div class="container">
+        &copy; 2014 
+        
+        <nav>
+            <a href="http://sethdowden.com/">Seth Dowden</a> &middot;
+            <a href="/blog/">Blog</a> &middot;
+            <a href="/blog/about/">About</a>
+        </nav>
+        
+        <nav class="social">
+            
+            <a href="https://twitter.com/sethdowden" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter black"></i></a>
+            
+            
+            <a href="http://linkedin.com//pub/seth-dowden/6a/433/2b3" title="Linkedin" target="_blank"><i class="icon icon-linkedin black"></i></a>
+                
+            <a href="/feed.xml" title="RSS Feed">
+                <i class="icon icon-rss black"></i>
+            </a>
+        </nav>
+        <p><a href="https://github.com/kippt/jekyll-incorporated">Incorporated theme by Inc</a></p>
+    </div>
+</footer>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="/blog/assets/main.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://incorporated.sendtoinc.com</link>
+    <atom:link href="http://incorporated.sendtoinc.com/feed.xml" rel="self" type="application/rss+xml" />
+    <description></description>
+    <language>en-us</language>
+    <pubDate>Fri, 06 Jun 2014 17:59:58 +0000</pubDate>
+    <lastBuildDate>Fri, 06 Jun 2014 17:59:58 +0000</lastBuildDate>
+
+    
+    
+    <item>
+      <title>Hello Jekyll</title>
+      <link>http://incorporated.sendtoinc.com/2014/06/02/HelloJekyllBlog/</link>
+      <pubDate>Mon, 02 Jun 2014 00:00:00 +0000</pubDate>
+      <author></author>
+      <guid>http://incorporated.sendtoinc.com/2014/06/02/HelloJekyllBlog</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;“Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;jekyll&lt;/a&gt; was created by Tom Preston-Werner the co-founder of github. It works seamlessly with &lt;a href=&quot;https://pages.github.com/&quot;&gt;github pages&lt;/a&gt; making it quick and easy to start a blog or static website in minutes.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/kippt/jekyll-incorporated&quot;&gt;incorporated&lt;/a&gt; is a jekyll app that has a very clean style and is a greate base for creating your own jekyll blog.&lt;/p&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;yaml&#39;&gt;&lt;span class=&#39;l-Scalar-Plain&#39;&gt;Terminal&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt;
+&lt;span class=&#39;l-Scalar-Plain&#39;&gt;~ $ git clone https://github.com/kippt/jekyll-incorporated&lt;/span&gt;
+&lt;span class=&#39;l-Scalar-Plain&#39;&gt;~ $ cd jekyll-incorporated&lt;/span&gt;
+&lt;span class=&#39;l-Scalar-Plain&#39;&gt;~ $ bundle install&lt;/span&gt;
+&lt;span class=&#39;l-Scalar-Plain&#39;&gt;~ $ jekyll serve --watch&lt;/span&gt;
+&lt;span class=&#39;l-Scalar-Plain&#39;&gt;~ $ open http://localhost:4000/&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then make the blog your own by editing the config.yml file and hacking around with the css to suit your preferences.&lt;/p&gt;
+
+&lt;p&gt;publishing your blog is as easy as creating a git repo and adding the repo name to the Rakefile&lt;/p&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;yaml&#39;&gt; 
+&lt;span class=&#39;l-Scalar-Plain&#39;&gt;Rakefile&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt;
+&lt;span class=&#39;c1&#39;&gt;# Change your GitHub repo name eg. &amp;quot;kippt/jekyll-incorporated&amp;quot;&lt;/span&gt;
+&lt;span class=&#39;l-Scalar-Plain&#39;&gt;GITHUB_REPONAME = &amp;quot;sethclarkdowden/Blog&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then run&lt;/p&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;yaml&#39;&gt;&lt;span class=&#39;l-Scalar-Plain&#39;&gt;Terminal&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt;
+&lt;span class=&#39;l-Scalar-Plain&#39;&gt;~ $ rake site:publish&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;in a few minutes you will have your very own blog&lt;/p&gt;</description>
+    </item>
+    
+    
+
+  </channel> 
+</rss>
